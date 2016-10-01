@@ -23,7 +23,7 @@ pub struct SelectAllNext<A> where A: Future {
 
 /// Creates a new future which will select over a list of futures.
 ///
-/// The returned future will wait for any future within `list` to be ready. Upon
+/// The returned future will wait for any future within `iter` to be ready. Upon
 /// completion or failure the item resolved will be returned, along with the
 /// index of the future that was ready and the list of all the remaining
 /// futures.
